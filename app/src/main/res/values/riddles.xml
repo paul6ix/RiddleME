@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="r1">  I’m tall when I’m young and I’m short when I’m old. What am I?</string>
+    <string name="r10"> What kind of tree can you carry in your hand?</string>
+    <!-- From: file:/C:/Users/Paul%20Chidi/StudioProjects/RiddleME/app/src/main/res/values/riddle_answers.xml -->
+    <eat-comment/>
+    <string name="r10_ans">palm</string>
+    <string name="r1_ans">candle</string>
+    <!-- From: file:/C:/Users/Paul%20Chidi/StudioProjects/RiddleME/app/src/main/res/values/riddles.xml -->
+    <eat-comment/>
+    <string name="r2"> Poor people have it. Rich people need it. If you eat it you die. What is it?</string>
+    <!-- From: file:/C:/Users/Paul%20Chidi/StudioProjects/RiddleME/app/src/main/res/values/riddle_answers.xml -->
+    <eat-comment/>
+    <string name="r2_ans">nothing</string>
+    <!-- From: file:/C:/Users/Paul%20Chidi/StudioProjects/RiddleME/app/src/main/res/values/riddles.xml -->
+    <eat-comment/>
+    <string name="r3"> What comes down but never goes up?</string>
+    <!-- From: file:/C:/Users/Paul%20Chidi/StudioProjects/RiddleME/app/src/main/res/values/riddle_answers.xml -->
+    <eat-comment/>
+    <string name="r3_ans">Rain</string>
+    <!-- From: file:/C:/Users/Paul%20Chidi/StudioProjects/RiddleME/app/src/main/res/values/riddles.xml -->
+    <eat-comment/>
+    <string name="r4"> What goes up when rain comes down?</string>
+    <!-- From: file:/C:/Users/Paul%20Chidi/StudioProjects/RiddleME/app/src/main/res/values/riddle_answers.xml -->
+    <eat-comment/>
+    <string name="r4_ans">Umbrella</string>
+    <!-- From: file:/C:/Users/Paul%20Chidi/StudioProjects/RiddleME/app/src/main/res/values/riddles.xml -->
+    <eat-comment/>
+    <string name="r5"> What word becomes shorter when you add two letters to it?</string>
+    <!-- From: file:/C:/Users/Paul%20Chidi/StudioProjects/RiddleME/app/src/main/res/values/riddle_answers.xml -->
+    <eat-comment/>
+    <string name="r5_ans">short</string>
+    <!-- From: file:/C:/Users/Paul%20Chidi/StudioProjects/RiddleME/app/src/main/res/values/riddles.xml -->
+    <eat-comment/>
+    <string name="r6"> What travels around the world but stays in one spot?</string>
+    <!-- From: file:/C:/Users/Paul%20Chidi/StudioProjects/RiddleME/app/src/main/res/values/riddle_answers.xml -->
+    <eat-comment/>
+    <string name="r6_ans">Stamp</string>
+    <!-- From: file:/C:/Users/Paul%20Chidi/StudioProjects/RiddleME/app/src/main/res/values/riddles.xml -->
+    <eat-comment/>
+    <string name="r7"> What has hands but can not clap?</string>
+    <!-- From: file:/C:/Users/Paul%20Chidi/StudioProjects/RiddleME/app/src/main/res/values/riddle_answers.xml -->
+    <eat-comment/>
+    <string name="r7_ans">clock</string>
+    <!-- From: file:/C:/Users/Paul%20Chidi/StudioProjects/RiddleME/app/src/main/res/values/riddles.xml -->
+    <eat-comment/>
+    <string name="r8"> What can you catch but not throw?</string>
+    <!-- From: file:/C:/Users/Paul%20Chidi/StudioProjects/RiddleME/app/src/main/res/values/riddle_answers.xml -->
+    <eat-comment/>
+    <string name="r8_ans">cold</string>
+    <!-- From: file:/C:/Users/Paul%20Chidi/StudioProjects/RiddleME/app/src/main/res/values/riddles.xml -->
+    <eat-comment/>
+    <string name="r9">What starts with the letter “t”, is filled with “t” and ends in “t”?</string>
+    <!-- From: file:/C:/Users/Paul%20Chidi/StudioProjects/RiddleME/app/src/main/res/values/riddle_answers.xml -->
+    <eat-comment/>
+    <string name="r9_ans">teapot</string>
+    <!-- From: file:/C:/Users/Paul%20Chidi/StudioProjects/RiddleME/app/src/main/res/values/strings.xml -->
+</resources>
