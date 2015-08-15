@@ -30,4 +30,10 @@ public class SplashActivity
         });
 
     }
+
+    @Override
+    public void onBackPressed() {
+        System.exit(1);
+        super.onBackPressed();
+    }
 }

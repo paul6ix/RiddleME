@@ -15,14 +15,12 @@ import android.widget.TextView;
 import com.sixtech.paulchidi.riddleme.R;
 
 public class GameActivity3 extends AppCompatActivity {
+    public TextView tvScore;
     protected ImageButton ibPause;
     protected Button bOk;
     protected ImageButton ibnext;
-
     protected TextView tvRiddle;
     protected EditText etAnswer;
-    public TextView tvScore;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +41,7 @@ public class GameActivity3 extends AppCompatActivity {
         ibnext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             Intent nextRiddle = new Intent(GameActivity3.this, GameActivity4.class);
+                Intent nextRiddle = new Intent(GameActivity3.this, GameActivity4.class);
                 int newScore = score + 10;
 
                 nextRiddle.putExtra("score", newScore);
@@ -54,6 +52,11 @@ public class GameActivity3 extends AppCompatActivity {
         });
 
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
     }
 
     private void gameButtons() {

@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sixtech.paulchidi.riddleme"
-    >
-
+    package="com.sixtech.paulchidi.riddleme">
 
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -12,7 +10,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_riddleme_logo"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name="com.sixtech.paulchidi.riddleme.MainActivity"
             android:label="@string/app_name"
@@ -20,7 +18,7 @@
         <activity
             android:name="com.sixtech.paulchidi.riddleme.SplashActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,15 +34,15 @@
         <activity
             android:name="com.sixtech.paulchidi.riddleme.game.GameActivity2"
             android:label="@string/title_activity_game" />
-       <activity
+        <activity
             android:name="com.sixtech.paulchidi.riddleme.game.GameActivity3"
             android:label="@string/title_activity_game" />
-           <activity
-             android:name="com.sixtech.paulchidi.riddleme.game.GameActivity4"
-             android:label="@string/title_activity_game" />
-         <activity
-             android:name="com.sixtech.paulchidi.riddleme.game.GameActivity5"
-             android:label="@string/title_activity_game" />
+        <activity
+            android:name="com.sixtech.paulchidi.riddleme.game.GameActivity4"
+            android:label="@string/title_activity_game" />
+        <activity
+            android:name="com.sixtech.paulchidi.riddleme.game.GameActivity5"
+            android:label="@string/title_activity_game" />
         <!--   <activity
                android:name="com.sixtech.paulchidi.riddleme.game.GameActivity6"
                android:label="@string/title_activity_game" />

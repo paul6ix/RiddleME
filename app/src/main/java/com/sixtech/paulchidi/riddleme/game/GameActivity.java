@@ -2,6 +2,7 @@ package com.sixtech.paulchidi.riddleme.game;
 
 import android.annotation.TargetApi;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -17,10 +18,10 @@ import com.sixtech.paulchidi.riddleme.R;
 
 public class GameActivity
         extends AppCompatActivity {
+    public TextView tvScore;
     protected ImageButton ibPause;
     protected Button bOk;
     protected ImageButton ibnext;
-    public TextView tvScore;
     protected TextView tvRiddle;
     protected EditText etAnswer;
     protected Intent nextRiddle;
@@ -42,13 +43,18 @@ public class GameActivity
             public void onClick(View v) {
                 Intent nextRiddle = new Intent(GameActivity.this, GameActivity1.class);
                 int gamescore = 10;
-                nextRiddle.putExtra("score", gamescore );
+                nextRiddle.putExtra("score", gamescore);
 
 
                 startActivity(nextRiddle);
 
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+
     }
 
     private void gameButtons() {
@@ -64,10 +70,13 @@ public class GameActivity
                 if (ans.equalsIgnoreCase(correctAns)) {
                     WinAnimation();
                     ibnext.setVisibility(View.VISIBLE);
+                    WinsoundEffects();
 
 
                 } else {
                     LoseAnimations();
+                    LoseSoundEffects();
+                    etAnswer.setText("");
                 }
 
             }
@@ -85,6 +94,15 @@ public class GameActivity
     }
 
     protected void WinsoundEffects() {
+        final MediaPlayer mpGame = MediaPlayer.create(this, R.raw.audience_applause);
+        mpGame.start();
+        mpGame.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                mpGame.release();
+            }
+        });
+
     }
 
     protected void WinAnimation() {
@@ -101,6 +119,15 @@ public class GameActivity
     }
 
     protected void LoseSoundEffects() {
+        final MediaPlayer mpGame = MediaPlayer.create(this, R.raw.sad_trombone);
+        mpGame.start();
+        mpGame.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                mpGame.release();
+                tvRiddle.setText(getResources().getString(R.string.r1));
+            }
+        });
     }
 
     protected void LoseAnimations() {

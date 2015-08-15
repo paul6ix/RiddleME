@@ -15,14 +15,12 @@ import android.widget.TextView;
 import com.sixtech.paulchidi.riddleme.R;
 
 public class GameActivity5 extends AppCompatActivity {
+    public TextView tvScore;
     protected ImageButton ibPause;
     protected Button bOk;
     protected ImageButton ibnext;
-
     protected TextView tvRiddle;
     protected EditText etAnswer;
-    public TextView tvScore;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +51,11 @@ public class GameActivity5 extends AppCompatActivity {
             }
         });
 
+
+    }
+
+    @Override
+    public void onBackPressed() {
 
     }
 

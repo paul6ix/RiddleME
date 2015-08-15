@@ -4,6 +4,7 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
     </style>
+
     <color name="button_win_textcolor">#00FF11</color>
     <color name="menu_btn_color">#256DB5</color>
     <color name="menu_btn_pressed_color">#2FD3FF</color>

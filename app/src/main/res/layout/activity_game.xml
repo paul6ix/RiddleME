@@ -7,78 +7,75 @@
 
 
     <ImageButton
+        android:id="@+id/btn_pause"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_pause"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/ic_pause"
-        android:background="@drawable/button_next_state"/>
+        android:layout_alignParentTop="true"
+        android:background="@drawable/button_next_state"
+        android:src="@drawable/ic_pause" />
 
     <TextView
+        android:id="@+id/textViewRiddle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
 
-        android:id="@+id/textViewRiddle"
         android:layout_below="@+id/btn_pause"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="115dp"
+        android:gravity="center"
         android:textAlignment="center"
-        android:textStyle="bold"
-        android:gravity="center" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
 
     <EditText
+        android:id="@+id/editTextAnswer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editTextAnswer"
-        android:hint="@string/text_ans"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:hint="@string/text_ans" />
 
     <Button
+        android:id="@+id/btn_ok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/okay_button"
-        android:id="@+id/btn_ok"
         android:layout_below="@+id/editTextAnswer"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:text="@string/okay_button" />
 
 
-
-     <ImageButton
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:id="@+id/btn_next"
-         android:layout_alignParentBottom="true"
-         android:layout_alignParentRight="true"
-         android:layout_alignParentEnd="true"
-         android:src="@drawable/next"
-         android:background="@drawable/button_next_state"
-         />
+    <ImageButton
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_next_state"
+        android:src="@drawable/next"
+        android:layout_below="@+id/editTextAnswer"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
+        android:id="@+id/textView_points"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/game_points"
-        android:id="@+id/textView_points"
-        android:textStyle="bold"
         android:layout_alignParentTop="true"
         android:layout_toLeftOf="@+id/btn_next"
-        android:layout_toStartOf="@+id/btn_next" />
+        android:layout_toStartOf="@+id/btn_next"
+        android:text="@string/game_points"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/textView_gamescore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/game_score"
-        android:id="@+id/textView_gamescore"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"
         android:layout_alignTop="@+id/textView_points"
+        android:layout_toEndOf="@+id/textView_points"
         android:layout_toRightOf="@+id/textView_points"
-        android:layout_toEndOf="@+id/textView_points" />
-</RelativeLayout>
-<!-- From: file:/C:/Users/Paul%20Chidi/StudioProjects/RiddleME/app/src/main/res/layout/activity_game.xml -->
+        android:text="@string/game_score"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+</RelativeLayout><!-- From: file:/C:/Users/Paul%20Chidi/StudioProjects/RiddleME/app/src/main/res/layout/activity_game.xml -->
